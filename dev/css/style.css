@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #CCCCCC;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.container{
+    width: 270px;
+    height: 340px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* padding: 1rem; */
+}
+.container-text{
+    margin-top: 2.3rem;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+.paragraph{
+    font-size: 1.4rem;
+    text-align: right;
+    margin-right: 2rem;
+    margin-top: .2rem;
+}
+.wrapper{
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-left: 2.8rem;
+}
+.buttons{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.button{
+    display: inline-block;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    margin: .5rem;
+    padding: .7rem 1rem;
+    text-transform: uppercase;
+    border: 1px solid black;
+}
+.cta-increase{
+    background-color: rgb(110, 255, 110);
+}
+.cta-increase:active{
+    background-color: rgb(41, 255, 41);
+}
+.cta-delete{
+    background-color: rgb(255, 255, 108);
+}
+.cta-delete:active{
+    background-color: rgb(255, 255, 44);
+}
+.cta-restart{
+    background-color: rgb(255, 111, 111);
+}
+.cta-restart:active{
+    background-color: rgb(255, 36, 36);
+}
+@media screen and (min-width: 900px) {
+    .container{
+        margin-top: 2.5rem;
+    }
+    .button{
+        cursor: pointer;
+        transition: background-color 800ms;
+    }
+    .cta-increase:hover{
+        background-color: rgb(41, 255, 41);
+    }
+    .cta-delete:hover{
+        background-color: rgb(255, 255, 44);
+    }
+    .cta-restart:hover{
+        background-color: rgb(255, 36, 36);
+    }
+
+} 
